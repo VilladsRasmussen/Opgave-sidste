@@ -1,0 +1,39 @@
+@use "partials";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid green;
+    
+    i {
+        font-size: 50px;
+        color: green;
+    }
+
+    nav > ul {
+    @include partials.flexbox() ;
+    list-style: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+}
+
+section:first-of-type(1) {
+    background-image: ;
+}
+
