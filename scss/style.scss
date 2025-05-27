@@ -33,7 +33,37 @@ header {
     }
 }
 
-section:first-of-type(1) {
-    background-image: ;
+
+
+section:first-of-type {
+    background-image: url('../img/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 530px;
+    width: auto;
+    @include partials.flexbox(column, center, flex-start, 0);
+    
+    article {
+        padding: 50px;
+        width: 55%;
+
+        h1 {
+            font-size: partials.$hovedoverskrift;
+            margin-bottom: partials.$margin-bottom;
+        }
+
+        p {
+            font-size: partials.$undertittel;
+            margin-bottom: partials.$margin-bottom;
+        }
+
+        a {
+            @include partials.button();
+        }
+    }
 }
+
+
 

@@ -1,7 +1,24 @@
+$primary-color: green;
+
+$hovedoverskrift: 40px;
+$undertittel: 26px;
+
+$margin-bottom: 20px;
+
 @mixin flexbox($direction: row, $justify: space-between, $align: center, $gap: 20px) {
   display: flex;
   gap: $gap;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin button() {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
